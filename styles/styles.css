@@ -12,12 +12,14 @@
 
 :root {
   /* colors */
-  --link-color: #035fe6;
-  --link-hover-color: #136ff6;
+  --link-color: #000000;
+  --link-hover-color: #313131;
   --background-color: white;
   --light-color: #eee;
+  --light-orange: #ffbf23;
   --dark-color: #ccc;
   --text-color: black;
+  --light-pink: #ffd7ef;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback;
@@ -206,5 +208,33 @@ main .section {
 /* section metadata */
 main .section.light,
 main .section.highlight {
-  background-color: var(--light-color);
+  background-color: var(--light-orange);
+}
+
+main .section.highlight.pink{
+  background-color: var(--light-pink);
+}
+
+
+main .section.highlight{
+  margin: 1em 0;
+}
+
+
+main .section.highlight > .default-content-wrapper{
+  color: var(--text-color);
+}
+
+main .section.industry-leaders .columns-img-col picture{
+  display: block;
+  width: 100px;
+}
+
+
+main .landing h1{
+  margin: 0;
+}
+
+main .landing p:last-child{
+  font-size: 14px;
 }
